@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_widget_view"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/widget_shape"
+    android:padding="@dimen/widget_margin">
+
+    <TextView
+        android:id="@+id/appwidget_text_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="11:20"
+        android:gravity="center"
+        android:background="@color/widgetColor"
+        android:textColor="@color/widgetTextColor"
+        android:textSize="@dimen/widget_text_size"
+        android:lines="1"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_weight="0.25" />
+    <TextView
+        android:id="@+id/appwidget_text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="@color/widgetTextColor"
+        android:background="@color/widgetBackgroundColor"
+        android:textSize="@dimen/widget_text_size"
+        android:padding="8dp"
+        android:lines="1"
+        android:gravity="center"
+        android:text="feb 11"
+        android:fontFamily="sans-serif-light"
+        android:layout_weight="0.75" />
+
+</LinearLayout>
